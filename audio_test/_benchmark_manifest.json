@@ -1,0 +1,5282 @@
+[
+  {
+    "file": "homophone_jingjie__subway__15dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__subway__10dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__subway__5dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__subway__0dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__server_room__15dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__server_room__10dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__server_room__5dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__server_room__0dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__fan__15dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__fan__10dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__fan__5dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__fan__0dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__motor__15dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__motor__10dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__motor__5dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__motor__0dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__reverb__l0.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "0",
+    "level": 0,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__reverb__l1.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "0",
+    "level": 1,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__reverb__l2.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__reverb__l3.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__open_field__30dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "30",
+    "level": 0,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__open_field__25dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "25",
+    "level": 1,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__open_field__20dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "20",
+    "level": 2,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__open_field__15dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "15",
+    "level": 3,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__high_noise__10dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__high_noise__5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__high_noise__0dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__high_noise__-5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__white_noise__10dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__white_noise__5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__white_noise__0dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__white_noise__-5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__whisper__l0.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "q0",
+    "level": 0,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__whisper__l1.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "q1",
+    "level": 1,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__whisper__l2.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "q2",
+    "level": 2,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__whisper__l3.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "q3",
+    "level": 3,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__rain__15dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__rain__10dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__rain__5dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__rain__0dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__thunderstorm__15dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__thunderstorm__10dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__thunderstorm__5dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__thunderstorm__0dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__wind__15dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__wind__10dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__wind__5dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_jingjie__wind__0dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "同音字",
+    "ground_truth": "我今天去了境界，风景很美",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 4.75
+  },
+  {
+    "file": "homophone_cengjing__subway__15dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__subway__10dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__subway__5dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__subway__0dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__server_room__15dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__server_room__10dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__server_room__5dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__server_room__0dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__fan__15dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__fan__10dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__fan__5dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__fan__0dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__motor__15dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__motor__10dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__motor__5dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__motor__0dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__reverb__l0.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "0",
+    "level": 0,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__reverb__l1.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "0",
+    "level": 1,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__reverb__l2.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__reverb__l3.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__open_field__30dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "30",
+    "level": 0,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__open_field__25dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "25",
+    "level": 1,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__open_field__20dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "20",
+    "level": 2,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__open_field__15dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "15",
+    "level": 3,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__high_noise__10dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__high_noise__5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__high_noise__0dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__high_noise__-5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__white_noise__10dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__white_noise__5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__white_noise__0dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__white_noise__-5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__whisper__l0.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "q0",
+    "level": 0,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__whisper__l1.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "q1",
+    "level": 1,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__whisper__l2.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "q2",
+    "level": 2,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__whisper__l3.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "q3",
+    "level": 3,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__rain__15dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__rain__10dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__rain__5dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__rain__0dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__thunderstorm__15dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__thunderstorm__10dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__thunderstorm__5dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__thunderstorm__0dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__wind__15dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__wind__10dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__wind__5dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_cengjing__wind__0dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "同音字",
+    "ground_truth": "曾经有一份真挚的爱情",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.82
+  },
+  {
+    "file": "homophone_yijing__subway__15dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__subway__10dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__subway__5dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__subway__0dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__server_room__15dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__server_room__10dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__server_room__5dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__server_room__0dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__fan__15dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__fan__10dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__fan__5dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__fan__0dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__motor__15dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__motor__10dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__motor__5dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__motor__0dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__reverb__l0.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "0",
+    "level": 0,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__reverb__l1.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "0",
+    "level": 1,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__reverb__l2.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__reverb__l3.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__open_field__30dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "30",
+    "level": 0,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__open_field__25dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "25",
+    "level": 1,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__open_field__20dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "20",
+    "level": 2,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__open_field__15dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "15",
+    "level": 3,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__high_noise__10dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__high_noise__5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__high_noise__0dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__high_noise__-5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__white_noise__10dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__white_noise__5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__white_noise__0dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__white_noise__-5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__whisper__l0.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "q0",
+    "level": 0,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__whisper__l1.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "q1",
+    "level": 1,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__whisper__l2.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "q2",
+    "level": 2,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__whisper__l3.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "q3",
+    "level": 3,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__rain__15dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__rain__10dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__rain__5dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__rain__0dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__thunderstorm__15dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__thunderstorm__10dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__thunderstorm__5dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__thunderstorm__0dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__wind__15dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__wind__10dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__wind__5dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.64
+  },
+  {
+    "file": "homophone_yijing__wind__0dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "同音字",
+    "ground_truth": "事情已经处理完了",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.64
+  },
+  {
+    "file": "proper_tech__subway__15dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__subway__10dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__subway__5dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__subway__0dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__server_room__15dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__server_room__10dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__server_room__5dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__server_room__0dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__fan__15dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__fan__10dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__fan__5dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__fan__0dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__motor__15dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__motor__10dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__motor__5dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__motor__0dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__reverb__l0.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "0",
+    "level": 0,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__reverb__l1.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "0",
+    "level": 1,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__reverb__l2.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__reverb__l3.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__open_field__30dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "30",
+    "level": 0,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__open_field__25dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "25",
+    "level": 1,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__open_field__20dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "20",
+    "level": 2,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__open_field__15dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "15",
+    "level": 3,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__high_noise__10dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__high_noise__5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__high_noise__0dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__high_noise__-5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__white_noise__10dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__white_noise__5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__white_noise__0dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__white_noise__-5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__whisper__l0.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "q0",
+    "level": 0,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__whisper__l1.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "q1",
+    "level": 1,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__whisper__l2.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "q2",
+    "level": 2,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__whisper__l3.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "q3",
+    "level": 3,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__rain__15dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__rain__10dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__rain__5dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__rain__0dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__thunderstorm__15dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__thunderstorm__10dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__thunderstorm__5dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__thunderstorm__0dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__wind__15dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__wind__10dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__wind__5dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_tech__wind__0dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "专名",
+    "ground_truth": "我用的是一台搭载了酷睿处理器的笔记本电脑",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 6.48
+  },
+  {
+    "file": "proper_place__subway__15dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__subway__10dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__subway__5dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__subway__0dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__server_room__15dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__server_room__10dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__server_room__5dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__server_room__0dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__fan__15dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__fan__10dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__fan__5dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__fan__0dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__motor__15dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__motor__10dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__motor__5dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__motor__0dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__reverb__l0.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "0",
+    "level": 0,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__reverb__l1.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "0",
+    "level": 1,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__reverb__l2.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__reverb__l3.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__open_field__30dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "30",
+    "level": 0,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__open_field__25dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "25",
+    "level": 1,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__open_field__20dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "20",
+    "level": 2,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__open_field__15dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "15",
+    "level": 3,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__high_noise__10dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__high_noise__5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__high_noise__0dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__high_noise__-5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__white_noise__10dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__white_noise__5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__white_noise__0dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__white_noise__-5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__whisper__l0.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "q0",
+    "level": 0,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__whisper__l1.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "q1",
+    "level": 1,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__whisper__l2.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "q2",
+    "level": 2,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__whisper__l3.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "q3",
+    "level": 3,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__rain__15dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__rain__10dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__rain__5dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__rain__0dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__thunderstorm__15dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__thunderstorm__10dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__thunderstorm__5dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__thunderstorm__0dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__wind__15dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__wind__10dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__wind__5dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.42
+  },
+  {
+    "file": "proper_place__wind__0dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "专名",
+    "ground_truth": "明天要去深圳出差",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.42
+  },
+  {
+    "file": "mixed_english__subway__15dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__subway__10dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__subway__5dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__subway__0dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__server_room__15dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__server_room__10dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__server_room__5dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__server_room__0dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__fan__15dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__fan__10dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__fan__5dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__fan__0dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__motor__15dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__motor__10dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__motor__5dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__motor__0dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__reverb__l0.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "0",
+    "level": 0,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__reverb__l1.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "0",
+    "level": 1,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__reverb__l2.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__reverb__l3.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__open_field__30dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "30",
+    "level": 0,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__open_field__25dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "25",
+    "level": 1,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__open_field__20dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "20",
+    "level": 2,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__open_field__15dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "15",
+    "level": 3,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__high_noise__10dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__high_noise__5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__high_noise__0dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__high_noise__-5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__white_noise__10dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__white_noise__5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__white_noise__0dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__white_noise__-5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__whisper__l0.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "q0",
+    "level": 0,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__whisper__l1.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "q1",
+    "level": 1,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__whisper__l2.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "q2",
+    "level": 2,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__whisper__l3.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "q3",
+    "level": 3,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__rain__15dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__rain__10dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__rain__5dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__rain__0dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__thunderstorm__15dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__thunderstorm__10dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__thunderstorm__5dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__thunderstorm__0dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__wind__15dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__wind__10dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__wind__5dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_english__wind__0dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "中英混",
+    "ground_truth": "我的工号是零零三，邮箱是 admin at example dot com",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 7.96
+  },
+  {
+    "file": "mixed_number__subway__15dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__subway__10dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__subway__5dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__subway__0dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__server_room__15dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__server_room__10dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__server_room__5dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__server_room__0dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__fan__15dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__fan__10dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__fan__5dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__fan__0dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__motor__15dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__motor__10dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__motor__5dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__motor__0dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__reverb__l0.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "0",
+    "level": 0,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__reverb__l1.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "0",
+    "level": 1,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__reverb__l2.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__reverb__l3.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__open_field__30dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "30",
+    "level": 0,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__open_field__25dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "25",
+    "level": 1,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__open_field__20dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "20",
+    "level": 2,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__open_field__15dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "15",
+    "level": 3,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__high_noise__10dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__high_noise__5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__high_noise__0dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__high_noise__-5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__white_noise__10dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__white_noise__5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__white_noise__0dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__white_noise__-5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__whisper__l0.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "q0",
+    "level": 0,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__whisper__l1.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "q1",
+    "level": 1,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__whisper__l2.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "q2",
+    "level": 2,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__whisper__l3.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "q3",
+    "level": 3,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__rain__15dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__rain__10dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__rain__5dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__rain__0dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__thunderstorm__15dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__thunderstorm__10dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__thunderstorm__5dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__thunderstorm__0dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__wind__15dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__wind__10dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__wind__5dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 4.32
+  },
+  {
+    "file": "mixed_number__wind__0dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "数字",
+    "ground_truth": "一百二十三号选手上场",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 4.32
+  },
+  {
+    "file": "context_disambig__subway__15dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__subway__10dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__subway__5dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__subway__0dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__server_room__15dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__server_room__10dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__server_room__5dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__server_room__0dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__fan__15dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__fan__10dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__fan__5dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__fan__0dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__motor__15dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__motor__10dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__motor__5dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__motor__0dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__reverb__l0.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "0",
+    "level": 0,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__reverb__l1.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "0",
+    "level": 1,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__reverb__l2.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__reverb__l3.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__open_field__30dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "30",
+    "level": 0,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__open_field__25dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "25",
+    "level": 1,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__open_field__20dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "20",
+    "level": 2,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__open_field__15dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "15",
+    "level": 3,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__high_noise__10dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__high_noise__5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__high_noise__0dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__high_noise__-5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__white_noise__10dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__white_noise__5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__white_noise__0dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__white_noise__-5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__whisper__l0.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "q0",
+    "level": 0,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__whisper__l1.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "q1",
+    "level": 1,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__whisper__l2.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "q2",
+    "level": 2,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__whisper__l3.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "q3",
+    "level": 3,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__rain__15dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__rain__10dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__rain__5dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__rain__0dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__thunderstorm__15dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__thunderstorm__10dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__thunderstorm__5dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__thunderstorm__0dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__wind__15dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__wind__10dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__wind__5dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_disambig__wind__0dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "上下文",
+    "ground_truth": "他喜欢吃湖南菜，特别是剁椒鱼头",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 5.62
+  },
+  {
+    "file": "context_industry__subway__15dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__subway__10dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__subway__5dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__subway__0dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__server_room__15dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__server_room__10dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__server_room__5dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__server_room__0dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__fan__15dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__fan__10dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__fan__5dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__fan__0dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__motor__15dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__motor__10dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__motor__5dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__motor__0dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__reverb__l0.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "0",
+    "level": 0,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__reverb__l1.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "0",
+    "level": 1,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__reverb__l2.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__reverb__l3.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__open_field__30dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "30",
+    "level": 0,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__open_field__25dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "25",
+    "level": 1,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__open_field__20dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "20",
+    "level": 2,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__open_field__15dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "15",
+    "level": 3,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__high_noise__10dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__high_noise__5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__high_noise__0dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__high_noise__-5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__white_noise__10dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__white_noise__5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__white_noise__0dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__white_noise__-5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__whisper__l0.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "q0",
+    "level": 0,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__whisper__l1.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "q1",
+    "level": 1,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__whisper__l2.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "q2",
+    "level": 2,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__whisper__l3.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "q3",
+    "level": 3,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__rain__15dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__rain__10dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__rain__5dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__rain__0dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__thunderstorm__15dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__thunderstorm__10dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__thunderstorm__5dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__thunderstorm__0dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__wind__15dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__wind__10dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__wind__5dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 5.33
+  },
+  {
+    "file": "context_industry__wind__0dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "上下文",
+    "ground_truth": "这个项目的里程碑要在月底前完成",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 5.33
+  },
+  {
+    "file": "tone_variation__subway__15dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__subway__10dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__subway__5dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__subway__0dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__server_room__15dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__server_room__10dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__server_room__5dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__server_room__0dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__fan__15dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__fan__10dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__fan__5dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__fan__0dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__motor__15dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__motor__10dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__motor__5dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__motor__0dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__reverb__l0.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "0",
+    "level": 0,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__reverb__l1.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "0",
+    "level": 1,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__reverb__l2.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__reverb__l3.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__open_field__30dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "30",
+    "level": 0,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__open_field__25dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "25",
+    "level": 1,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__open_field__20dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "20",
+    "level": 2,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__open_field__15dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "15",
+    "level": 3,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__high_noise__10dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__high_noise__5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__high_noise__0dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__high_noise__-5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__white_noise__10dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__white_noise__5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__white_noise__0dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__white_noise__-5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__whisper__l0.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "q0",
+    "level": 0,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__whisper__l1.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "q1",
+    "level": 1,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__whisper__l2.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "q2",
+    "level": 2,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__whisper__l3.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "q3",
+    "level": 3,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__rain__15dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__rain__10dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__rain__5dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__rain__0dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__thunderstorm__15dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__thunderstorm__10dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__thunderstorm__5dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__thunderstorm__0dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__wind__15dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__wind__10dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__wind__5dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.96
+  },
+  {
+    "file": "tone_variation__wind__0dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "轻声",
+    "ground_truth": "把窗户打开，透透气",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.96
+  },
+  {
+    "file": "accent_flat__subway__15dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__subway__10dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__subway__5dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__subway__0dB.wav",
+    "scenario": "subway",
+    "scenario_label": "🚇 地铁",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__server_room__15dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__server_room__10dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__server_room__5dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__server_room__0dB.wav",
+    "scenario": "server_room",
+    "scenario_label": "🖥️ 机房",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__fan__15dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__fan__10dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__fan__5dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__fan__0dB.wav",
+    "scenario": "fan",
+    "scenario_label": "🌀 风扇",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__motor__15dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__motor__10dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__motor__5dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__motor__0dB.wav",
+    "scenario": "motor",
+    "scenario_label": "⚡ 电机",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__reverb__l0.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "0",
+    "level": 0,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__reverb__l1.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "0",
+    "level": 1,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__reverb__l2.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__reverb__l3.wav",
+    "scenario": "reverb",
+    "scenario_label": "🏛️ 混响",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__open_field__30dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "30",
+    "level": 0,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__open_field__25dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "25",
+    "level": 1,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__open_field__20dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "20",
+    "level": 2,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__open_field__15dB.wav",
+    "scenario": "open_field",
+    "scenario_label": "🌄 旷野",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "15",
+    "level": 3,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__high_noise__10dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__high_noise__5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__high_noise__0dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__high_noise__-5dB.wav",
+    "scenario": "high_noise",
+    "scenario_label": "📢 高噪音",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__white_noise__10dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "10",
+    "level": 0,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__white_noise__5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "5",
+    "level": 1,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__white_noise__0dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "0",
+    "level": 2,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__white_noise__-5dB.wav",
+    "scenario": "white_noise",
+    "scenario_label": "⬜ 白噪音",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "-5",
+    "level": 3,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__whisper__l0.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "q0",
+    "level": 0,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__whisper__l1.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "q1",
+    "level": 1,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__whisper__l2.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "q2",
+    "level": 2,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__whisper__l3.wav",
+    "scenario": "whisper",
+    "scenario_label": "🤫 轻语",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "q3",
+    "level": 3,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__rain__15dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__rain__10dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__rain__5dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__rain__0dB.wav",
+    "scenario": "rain",
+    "scenario_label": "🌧️ 下雨",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__thunderstorm__15dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__thunderstorm__10dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__thunderstorm__5dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__thunderstorm__0dB.wav",
+    "scenario": "thunderstorm",
+    "scenario_label": "⛈️ 雷暴",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__wind__15dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "15",
+    "level": 0,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__wind__10dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "10",
+    "level": 1,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__wind__5dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "5",
+    "level": 2,
+    "duration_s": 3.53
+  },
+  {
+    "file": "accent_flat__wind__0dB.wav",
+    "scenario": "wind",
+    "scenario_label": "💨 大风",
+    "category": "口音",
+    "ground_truth": "飞机晚上十点起飞",
+    "snr": "0",
+    "level": 3,
+    "duration_s": 3.53
+  }
+]

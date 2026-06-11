@@ -1,0 +1,30 @@
+# ── 模型文件（太大，需要单独下载）──
+models/Qwen3.5-2B-Q4_K_M.gguf
+models/zipformer-ctc-zh-int8/
+models/sense-voice-encoder-int8/
+models/vad/
+
+# ── 测试音频（可重新生成）──
+audio_test/noisy/
+
+# ── Python ──
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# ── Benchmark 结果（可重跑）──
+audio_test/_benchmark_results.json
+audio_test/_benchmark_ctc_results.json
+audio_test/_benchmark_ctc_llm_results.json
+audio_test/_benchmark_progress.json
+audio_test/_benchmark_ctc_progress.json
+BENCHMARK_REPORT.md
+BENCHMARK_CTC_REPORT.md
+
+# ── 系统 ──
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

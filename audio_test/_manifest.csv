@@ -1,0 +1,12 @@
+filename,category,ground_truth,description
+homophone_jingjie.wav,同音字,我今天去了境界，风景很美,境界 vs 镜里 — 经典前后鼻音混淆
+homophone_cengjing.wav,同音字,曾经有一份真挚的爱情,曾经 vs 滤镜 — 不同声母
+homophone_yijing.wav,同音字,事情已经处理完了,已经 vs 一惊 — 轻声混淆
+proper_tech.wav,专名,我用的是一台搭载了酷睿处理器的笔记本电脑,酷睿 vs 酷瑞 — 品牌名译音
+proper_place.wav,专名,明天要去深圳出差,深圳 vs 深镇 — 地名规范
+mixed_english.wav,中英混,我的工号是零零三，邮箱是 admin at example dot com,中英数字混合，邮箱格式
+mixed_number.wav,数字,一百二十三号选手上场,阿拉伯数字 vs 中文数字
+context_disambig.wav,上下文,他喜欢吃湖南菜，特别是剁椒鱼头,湖南 vs 胡南 — 需要地理知识
+context_industry.wav,上下文,这个项目的里程碑要在月底前完成,里程碑 vs 里成碑 — 专有组合词
+tone_variation.wav,轻声,把窗户打开，透透气,窗户 vs 窗护 — 轻声错误
+accent_flat.wav,口音,飞机晚上十点起飞,十点 vs 四点 — 平舌翘舌混淆

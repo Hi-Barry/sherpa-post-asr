@@ -1,0 +1,20 @@
+# 核心依赖
+sherpa-onnx>=1.13.0        # ASR 前端 (SenseVoice)
+fastapi>=0.110.0            # API 服务
+uvicorn>=0.27.0             # ASGI 服务器
+pydantic>=2.0               # 数据模型
+soundfile>=0.12.0           # 音频 I/O
+numpy>=1.24                 # 数值计算
+
+# 纠错 LLM
+llama-cpp-python>=0.3.0     # GGUF 推理 (GPU offload 需要编译)
+
+# 音频处理
+librosa>=0.10.0             # 重采样
+
+# 测试
+requests>=2.31.0            # HTTP 测试客户端
+
+# 测试音频生成（可选）
+# edge-tts                    # TTS 合成测试音频
+# pyttsx3                     # TTS 回退方案
