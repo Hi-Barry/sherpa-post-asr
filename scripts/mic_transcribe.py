@@ -129,6 +129,20 @@ class AsrEngine:
         self.recognizer.decode_stream(stream)
         return stream.result.text
 
+    @staticmethod
+    def clean_text(text: str) -> tuple[str, float]:
+        """清理输出文本：移除 <unk>，返回 (清理后文本, <unk>占比)"""
+        if not text:
+            return "", 0.0
+        total = len(text.split())
+        unk_count = text.count("<unk>")
+        cleaned = text.replace("<unk>", "").strip()
+        # 合并多余空格
+        import re
+        cleaned = re.sub(r'\s+', '', cleaned)
+        unk_ratio = unk_count / max(total, 1)
+        return cleaned, unk_ratio
+
     def is_speech_active(self) -> bool:
         """当前是否处于语音活动状态"""
         return self.vad.is_speech_detected()
@@ -277,14 +291,15 @@ def run_realtime(device=None):
                 if len(segment) < SAMPLE_RATE * 0.3:  # 小于 0.3 秒的段跳过
                     continue
 
-                # 转写
+                # 转写 + 清理
                 text = engine.transcribe(segment)
-                text = text.strip()
+                text, unk_ratio = engine.clean_text(text)
 
                 if text:
                     stats["segments"] += 1
                     stats["total_chars"] += len(text)
-                    Display.show_result(text)
+                    suffix = f" ⚠️ <unk>占比 {unk_ratio:.0%}" if unk_ratio > 0.3 else ""
+                    Display.show_result(text + suffix)
 
     except KeyboardInterrupt:
         print("\n\n  ⏹️  正在停止...")
@@ -296,7 +311,7 @@ def run_realtime(device=None):
         while engine.has_segment():
             segment = engine.pop_segment()
             if len(segment) >= SAMPLE_RATE * 0.3:
-                text = engine.transcribe(segment).strip()
+                text, _ = engine.clean_text(engine.transcribe(segment))
                 if text:
                     stats["segments"] += 1
                     stats["total_chars"] += len(text)
@@ -377,10 +392,12 @@ def run_one_shot(device=None):
     # 逐段转写
     total_chars = 0
     for i, seg in enumerate(segments):
-        text = engine.transcribe(seg).strip()
+        raw_text = engine.transcribe(seg)
+        text, unk_ratio = engine.clean_text(raw_text)
         if text:
             total_chars += len(text)
-            print(f"  ✍️ [{i + 1}] {text}")
+            suffix = f" ⚠️ <unk>占比 {unk_ratio:.0%}" if unk_ratio > 0.3 else ""
+            print(f"  ✍️ [{i + 1}] {text}{suffix}")
 
     print(f"\n  📊 总计: {total_chars} 字符 / {len(segments)} 段\n")
 
