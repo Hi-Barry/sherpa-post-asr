@@ -1,6 +1,8 @@
 # ── 模型文件（太大，需要单独下载）──
 models/Qwen3.5-2B-Q4_K_M.gguf
 models/zipformer-ctc-zh-int8/
+models/zipformer-bilingual/
+models/sense-voice-encoder-int8/
 models/sense-voice-encoder-int8/
 models/vad/
 
