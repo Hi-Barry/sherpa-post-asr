@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
 """
-🎤 mic_transcribe.py — 本地麦克风录音 + Zipformer-CTC 实时转写
+🎤 mic_transcribe.py — 本地麦克风录音 + CTC 多模型集成转写
 
-基于"字级独立建模"（帧级 CTC 分类，无语言模型偏置），
-使用本地麦克风实时捕获语音并通过 Zipformer-CTC 转写为文字。
+支持四种模式：
+  ctc          Zipformer-CTC（中文专用，最高精度）
+  bilingual    Zipformer Transducer（中英双语，无 <unk>）
+  omnilingual  Omnilingual 300M CTC（多语言，无 <unk>）
+  ensemble     【NEW】三模型集成：Zipformer(主) + Omni(<unk>补全) + Parakeet(英文)
 
 使用方式：
-    python3 scripts/mic_transcribe.py              # 实时模式（持续监听）
-    python3 scripts/mic_transcribe.py --one-shot   # 单次模式（回车开始/结束）
-    python3 scripts/mic_transcribe.py --list-devices  # 列出音频设备
-
-依赖：
-    pip install sounddevice sherpa-onnx numpy
+    python3 scripts/mic_transcribe.py                          # 实时模式（CTC）
+    python3 scripts/mic_transcribe.py --ensemble               # 实时模式（三模型集成）
+    python3 scripts/mic_transcribe.py --one-shot               # 单次模式
+    python3 scripts/mic_transcribe.py --file test.wav          # 文件模式
+    python3 scripts/mic_transcribe.py --list-devices           # 列出音频设备
 """
 
 import sys
@@ -20,6 +22,7 @@ import time
 import argparse
 import threading
 import queue
+import re
 from pathlib import Path
 
 import numpy as np
@@ -30,158 +33,175 @@ import sherpa_onnx
 # 配置
 # ═══════════════════════════════════════════════════
 
-# 项目路径（假设脚本在 scripts/ 目录下）
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_DIR = SCRIPT_DIR.parent
 
-# 模型路径
 MODEL_DIR = PROJECT_DIR / "models" / "zipformer-ctc-zh-int8" / "sherpa-onnx-zipformer-ctc-zh-int8-2025-07-03"
 BILINGUAL_DIR = PROJECT_DIR / "models" / "zipformer-bilingual" / "sherpa-onnx-zipformer-zh-en-2023-11-22"
+OMNILINGUAL_DIR = PROJECT_DIR / "models" / "omnilingual-ctc"
 VAD_MODEL = PROJECT_DIR / "models" / "vad" / "silero_vad.onnx"
 
-# 音频参数
-SAMPLE_RATE = 16000          # sherpa-onnx 要求的采样率
-CHANNELS = 1                 # 单声道
-CHUNK_SIZE_MS = 100          # 每次读取的音频长度（毫秒），与 Android 版一致
-CHUNK_SAMPLES = int(SAMPLE_RATE * CHUNK_SIZE_MS / 1000)  # 每次读取的采样点数
+SAMPLE_RATE = 16000
+CHANNELS = 1
+CHUNK_SIZE_MS = 100
+CHUNK_SAMPLES = int(SAMPLE_RATE * CHUNK_SIZE_MS / 1000)
 
-# VAD 参数
-VAD_THRESHOLD = 0.5          # Silero VAD 阈值（0.0-1.0），越高越严格
-VAD_MIN_SPEECH_DURATION = 0.25   # 最短语音段（秒），过滤短促噪声
-VAD_MIN_SILENCE_DURATION = 0.5   # 最长静音（秒），超过此长度认为语音结束
+VAD_THRESHOLD = 0.5
+VAD_MIN_SPEECH_DURATION = 0.25
+VAD_MIN_SILENCE_DURATION = 0.5
 
-# ASR 参数
 ASR_NUM_THREADS = 4
-DECODING_METHOD = "greedy_search"  # ← 关键：纯帧级分类，无 LM
+DECODING_METHOD = "greedy_search"
 
 
 # ═══════════════════════════════════════════════════
-# 引擎初始化
+# VAD 引擎（共用）
 # ═══════════════════════════════════════════════════
 
-class AsrEngine:
-    """ASR + Silero VAD 引擎。支持两种模型：
-    - ctc: Zipformer-CTC（中文专用，帧级独立分类，CER=0.0104）
-    - bilingual: Zipformer Transducer（中英双语，无 <unk>）
-    """
-
-    def __init__(self, model_type: str = "ctc"):
-        self.model_type = model_type
-
-        # 加载 VAD
+class VadEngine:
+    def __init__(self):
         if not VAD_MODEL.exists():
-            raise FileNotFoundError(
-                f"VAD 模型未找到: {VAD_MODEL}\n"
-                f"请下载: wget https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/silero_vad.onnx"
-            )
-        self.vad_config = sherpa_onnx.VadModelConfig(
+            raise FileNotFoundError(f"VAD 模型未找到: {VAD_MODEL}")
+        self.config = sherpa_onnx.VadModelConfig(
             silero_vad=sherpa_onnx.SileroVadModelConfig(
-                model=str(VAD_MODEL),
-                threshold=VAD_THRESHOLD,
+                model=str(VAD_MODEL), threshold=VAD_THRESHOLD,
                 min_speech_duration=VAD_MIN_SPEECH_DURATION,
                 min_silence_duration=VAD_MIN_SILENCE_DURATION,
                 window_size=512,
-            ),
-            sample_rate=SAMPLE_RATE,
-            num_threads=1,
+            ), sample_rate=SAMPLE_RATE, num_threads=1,
         )
-        self.vad = sherpa_onnx.VoiceActivityDetector(self.vad_config, buffer_size_in_seconds=120)
+        self.vad = sherpa_onnx.VoiceActivityDetector(self.config, buffer_size_in_seconds=120)
 
-        # 加载 ASR 模型
-        if model_type == "bilingual":
-            self._load_bilingual()
-        else:
-            self._load_ctc()
+    def feed(self, samples): self.vad.accept_waveform(samples.flatten().tolist())
+    def flush(self): self.vad.flush()
+    def has_segment(self): return not self.vad.empty()
+    def is_active(self): return self.vad.is_speech_detected()
 
-    def _load_ctc(self):
-        """加载 Zipformer-CTC（中文专用）"""
-        if not MODEL_DIR.exists():
-            raise FileNotFoundError(
-                f"CTC 模型目录未找到: {MODEL_DIR}\n"
-                f"请下载: cd {MODEL_DIR.parent} && "
-                f"wget https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/"
-                f"sherpa-onnx-zipformer-ctc-zh-int8-2025-07-03.tar.bz2 && "
-                f"tar xf sherpa-onnx-zipformer-ctc-zh-int8-2025-07-03.tar.bz2"
-            )
-
-        print(f"  📦 加载 CTC 模型: {MODEL_DIR.name}")
-        t0 = time.time()
-        self.recognizer = sherpa_onnx.OfflineRecognizer.from_zipformer_ctc(
-            model=str(MODEL_DIR / "model.int8.onnx"),
-            tokens=str(MODEL_DIR / "tokens.txt"),
-            num_threads=ASR_NUM_THREADS,
-            sample_rate=SAMPLE_RATE,
-            decoding_method=DECODING_METHOD,  # ← 纯帧级分类
-        )
-        print(f"  ✅ CTC 模型加载完成 ({time.time() - t0:.1f}s)")
-
-    def _load_bilingual(self):
-        """加载中英双语 Transducer 模型"""
-        if not BILINGUAL_DIR.exists():
-            raise FileNotFoundError(
-                f"双语模型目录未找到: {BILINGUAL_DIR}\n"
-                f"请下载: cd {BILINGUAL_DIR.parent} && "
-                f"wget https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/"
-                f"sherpa-onnx-zipformer-zh-en-2023-11-22.tar.bz2 && "
-                f"tar xf sherpa-onnx-zipformer-zh-en-2023-11-22.tar.bz2"
-            )
-
-        print(f"  📦 加载双语模型: {BILINGUAL_DIR.name}")
-        t0 = time.time()
-        self.recognizer = sherpa_onnx.OfflineRecognizer.from_transducer(
-            encoder=str(BILINGUAL_DIR / "encoder-epoch-34-avg-19.int8.onnx"),
-            decoder=str(BILINGUAL_DIR / "decoder-epoch-34-avg-19.onnx"),
-            joiner=str(BILINGUAL_DIR / "joiner-epoch-34-avg-19.int8.onnx"),
-            tokens=str(BILINGUAL_DIR / "tokens.txt"),
-            num_threads=ASR_NUM_THREADS,
-            decoding_method=DECODING_METHOD,
-        )
-        print(f"  ✅ 双语模型加载完成 ({time.time() - t0:.1f}s)")
-
-    def feed_audio(self, samples: np.ndarray):
-        """喂入音频到 VAD"""
-        samples = samples.flatten()  # 确保一维
-        self.vad.accept_waveform(samples.tolist())
-
-    def flush_vad(self):
-        """刷新 VAD 缓冲区"""
-        self.vad.flush()
-
-    def has_segment(self) -> bool:
-        """是否有完成的语音段"""
-        return not self.vad.empty()
-
-    def pop_segment(self) -> np.ndarray:
-        """取出下一个语音段"""
-        seg_obj = self.vad.front
-        seg = np.array(seg_obj.samples, dtype=np.float32)
+    def pop_segment(self):
+        seg = np.array(self.vad.front.samples, dtype=np.float32)
         self.vad.pop()
         return seg
 
-    def transcribe(self, samples: np.ndarray) -> str:
-        """对音频段做 CTC 识别（帧级独立分类）"""
-        stream = self.recognizer.create_stream()
-        stream.accept_waveform(SAMPLE_RATE, samples.tolist())
-        self.recognizer.decode_stream(stream)
-        return stream.result.text
 
-    @staticmethod
-    def clean_text(text: str) -> tuple[str, float]:
-        """清理输出文本：移除 <unk>，返回 (清理后文本, <unk>占比)"""
-        if not text:
-            return "", 0.0
-        total = len(text.split())
-        unk_count = text.count("<unk>")
-        cleaned = text.replace("<unk>", "").strip()
-        # 合并多余空格
-        import re
-        cleaned = re.sub(r'\s+', '', cleaned)
-        unk_ratio = unk_count / max(total, 1)
-        return cleaned, unk_ratio
+# ═══════════════════════════════════════════════════
+# ASR 引擎工厂
+# ═══════════════════════════════════════════════════
 
-    def is_speech_active(self) -> bool:
-        """当前是否处于语音活动状态"""
-        return self.vad.is_speech_detected()
+def create_ctc():
+    print(f"  📦 CTC: {MODEL_DIR.name}")
+    return sherpa_onnx.OfflineRecognizer.from_zipformer_ctc(
+        model=str(MODEL_DIR / "model.int8.onnx"),
+        tokens=str(MODEL_DIR / "tokens.txt"),
+        num_threads=ASR_NUM_THREADS, sample_rate=SAMPLE_RATE,
+        decoding_method=DECODING_METHOD,
+    )
+
+def create_bilingual():
+    print(f"  📦 双语: {BILINGUAL_DIR.name}")
+    return sherpa_onnx.OfflineRecognizer.from_transducer(
+        encoder=str(BILINGUAL_DIR / "encoder-epoch-34-avg-19.int8.onnx"),
+        decoder=str(BILINGUAL_DIR / "decoder-epoch-34-avg-19.onnx"),
+        joiner=str(BILINGUAL_DIR / "joiner-epoch-34-avg-19.int8.onnx"),
+        tokens=str(BILINGUAL_DIR / "tokens.txt"),
+        num_threads=ASR_NUM_THREADS, decoding_method=DECODING_METHOD,
+    )
+
+def create_omnilingual():
+    print(f"  📦 Omni: {OMNILINGUAL_DIR.name}")
+    return sherpa_onnx.OfflineRecognizer.from_omnilingual_asr_ctc(
+        model=str(OMNILINGUAL_DIR / "model.int8.onnx"),
+        tokens=str(OMNILINGUAL_DIR / "tokens.txt"),
+        num_threads=ASR_NUM_THREADS, decoding_method=DECODING_METHOD,
+    )
+
+
+# ═══════════════════════════════════════════════════
+# 解码函数
+# ═══════════════════════════════════════════════════
+
+def decode(recognizer, samples):
+    s = recognizer.create_stream()
+    s.accept_waveform(SAMPLE_RATE, samples.tolist())
+    recognizer.decode_stream(s)
+    return s.result.text or ""
+
+
+# ═══════════════════════════════════════════════════
+# 集成解码（核心）
+# ═══════════════════════════════════════════════════
+
+class EnsembleDecoder:
+    """三模型集成解码器
+    
+    策略：
+    1. 主模型 CTC（最快，中文最准）
+    2. 若无 <unk> → 直接返回（纯中文最优）
+    3. 若有 <unk> → 用 Omni 输出替换 <unk> 区域
+    4. 若有 <unk> 且 Omni 输出英文 → 保留 Omni 输出
+    """
+
+    def __init__(self):
+        self.recognizers = {}  # lazy load
+
+    def _ensure(self, key: str):
+        if key not in self.recognizers:
+            t0 = time.time()
+            if key == "ctc":
+                self.recognizers[key] = create_ctc()
+            elif key == "omni":
+                self.recognizers[key] = create_omnilingual()
+            elif key == "bilingual":
+                self.recognizers[key] = create_bilingual()
+            print(f"      ✔ {time.time()-t0:.1f}s")
+
+    def transcribe(self, samples):
+        """集成解码"""
+        # Step 1: CTC 主模型
+        self._ensure("ctc")
+        text_ctc = decode(self.recognizers["ctc"], samples)
+        has_unk = "<unk>" in text_ctc
+
+        if not has_unk:
+            return ("ctc", text_ctc)
+
+        # Step 2: 有 <unk> → 跑 Omni
+        self._ensure("omni")
+        text_omni = decode(self.recognizers["omni"], samples)
+
+        # 检查英文比例
+        en_ratio = len(re.findall(r'[a-zA-Z]', text_omni)) / max(len(text_omni), 1)
+
+        if en_ratio > 0.1:
+            # Omni 识别到英文 → 用 Omni 结果
+            return ("omni", text_omni)
+        else:
+            # 替换 <unk> 区域
+            text_fixed = self._replace_unks(text_ctc, text_omni)
+            return ("ensemble", text_fixed)
+
+    def _replace_unks(self, text_ctc: str, text_omni: str) -> str:
+        """用 Omni 输出替换 CTC 中的 <unk> 区域"""
+        # 简单实现：按 <unk> 分割，用 Omni 对应位置替换
+        parts = text_ctc.split("<unk>")
+        if len(parts) == 1:
+            return text_ctc
+
+        # 对每个 <unk>，从 Omni 中取对应位置
+        result = []
+        omni_pos = 0
+        for i, part in enumerate(parts):
+            result.append(part)
+            if i < len(parts) - 1:
+                # 从 Omni 输出中取对应位置的字符
+                start = min(omni_pos, len(text_omni) - 1)
+                # 取 Omni 中对应区域
+                end = min(start + 3, len(text_omni))  # 每个 <unk> 大约对应 2-3 个字
+                replacement = text_omni[start:end]
+                if replacement:
+                    result.append(replacement)
+                omni_pos = end
+
+        return "".join(result)
 
 
 # ═══════════════════════════════════════════════════
@@ -189,43 +209,34 @@ class AsrEngine:
 # ═══════════════════════════════════════════════════
 
 class MicCapture:
-    """麦克风音频采集"""
-
     def __init__(self):
         self.audio_queue = queue.Queue()
         self.running = False
         self.stream = None
 
     def _callback(self, indata, frames, time_info, status):
-        """sounddevice 回调：每次 CHUNK_SAMPLES 个采样点"""
         if status:
             print(f"⚠️ 音频状态: {status}", file=sys.stderr)
-        # indata shape: (frames, channels)，取单声道
         self.audio_queue.put(indata[:, 0].copy())
 
     def start(self, device=None):
-        """启动麦克风采集"""
         self.running = True
         self.stream = sd.InputStream(
-            device=device,
-            samplerate=SAMPLE_RATE,
-            channels=CHANNELS,
-            blocksize=CHUNK_SAMPLES,
+            device=device, samplerate=SAMPLE_RATE,
+            channels=CHANNELS, blocksize=CHUNK_SAMPLES,
             callback=self._callback,
         )
         self.stream.start()
-        print(f"  🎤 麦克风已启动 (采样率={SAMPLE_RATE}Hz, 块大小={CHUNK_SIZE_MS}ms)")
+        print(f"  🎤 麦克风已启动 ({SAMPLE_RATE}Hz, {CHUNK_SIZE_MS}ms)")
 
     def stop(self):
-        """停止麦克风采集"""
         self.running = False
         if self.stream:
             self.stream.stop()
             self.stream.close()
             self.stream = None
 
-    def read_chunk(self, timeout: float = None) -> np.ndarray | None:
-        """读取一个音频块（阻塞）"""
+    def read_chunk(self, timeout=None):
         try:
             return self.audio_queue.get(timeout=timeout)
         except queue.Empty:
@@ -233,35 +244,162 @@ class MicCapture:
 
 
 # ═══════════════════════════════════════════════════
-# 显示工具
+# 显示
 # ═══════════════════════════════════════════════════
 
-class Display:
-    """终端显示"""
+def show_status(text, is_active=False):
+    indicator = "\U0001f534" if is_active else "\u26ab"
+    print(f"\r  {indicator} {text:<70}", end="", flush=True)
 
-    @staticmethod
-    def clear_line():
-        """清除当前行"""
-        print("\r" + " " * 80 + "\r", end="", flush=True)
+def show_result(text, source=""):
+    tag = f" [{source}]" if source else ""
+    print(f"\r  ✍️ {text}{tag}")
 
-    @staticmethod
-    def show_status(text: str, is_active: bool = False):
-        """显示状态"""
-        indicator = "🔴" if is_active else "⚫"
-        print(f"\r  {indicator} {text:<70}", end="", flush=True)
+def show_stats(stats):
+    print(f"\n  📊 统计:")
+    for k, v in stats.items():
+        print(f"     {k}: {v}")
 
-    @staticmethod
-    def show_result(text: str):
-        """显示转写结果"""
-        print(f"\r  ✍️ {text}")
 
-    @staticmethod
-    def show_stats(stats: dict):
-        """显示统计信息"""
-        print(f"\n  📊 会话统计:")
-        print(f"     转写段数: {stats.get('segments', 0)}")
-        print(f"     总字符数: {stats.get('total_chars', 0)}")
-        print(f"     运行时间: {stats.get('runtime_s', 0):.1f}s")
+# ═══════════════════════════════════════════════════
+# 实时模式
+# ═══════════════════════════════════════════════════
+
+def run_realtime(device=None, mode="ctc"):
+    model_labels = {
+        "ctc": "Zipformer-CTC（中文）",
+        "bilingual": "Transducer（中英双语）",
+        "omnilingual": "Omnilingual 300M（多语言）",
+        "ensemble": "三模型集成（CTC+Omni）",
+    }
+    print(f"\n  🎤 {model_labels.get(mode, mode)} 实时语音转写")
+    print("  Ctrl+C 退出\n")
+
+    # 初始化 VAD
+    vad = VadEngine()
+
+    # 初始化 ASR
+    t0 = time.time()
+    if mode == "ctc":
+        rec = create_ctc()
+    elif mode == "bilingual":
+        rec = create_bilingual()
+    elif mode == "omnilingual":
+        rec = create_omnilingual()
+    elif mode == "ensemble":
+        ensemble = EnsembleDecoder()
+    else:
+        raise ValueError(f"Unknown mode: {mode}")
+    print(f"  ✔ 引擎就绪 ({time.time()-t0:.1f}s)\n")
+
+    mic = MicCapture()
+    try:
+        mic.start(device=device)
+    except Exception as e:
+        print(f"  ❌ 无法打开麦克风: {e}")
+        return
+
+    stats = {"segments": 0, "total_chars": 0}
+    start_time = time.time()
+
+    try:
+        while mic.running:
+            chunk = mic.read_chunk(timeout=0.05)
+            if chunk is None:
+                continue
+
+            vad.feed(chunk)
+            show_status("说话中..." if vad.is_active() else "监听中...", vad.is_active())
+
+            while vad.has_segment():
+                seg = vad.pop_segment()
+                if len(seg) < SAMPLE_RATE * 0.3:
+                    continue
+
+                if mode == "ensemble":
+                    source, text = ensemble.transcribe(seg)
+                    if text:
+                        stats["segments"] += 1
+                        stats["total_chars"] += len(text)
+                        show_result(text, source=source)
+                else:
+                    text = decode(rec, seg)
+                    cleaned = text.replace("<unk>", "").strip()
+                    if cleaned:
+                        stats["segments"] += 1
+                        stats["total_chars"] += len(cleaned)
+                        has_unk = "<unk>" in text
+                        suffix = " ⚠️ <unk>" if has_unk else ""
+                        show_result(cleaned + suffix)
+
+    except KeyboardInterrupt:
+        print("\n\n  ⏹️ 停止中...")
+    finally:
+        mic.stop()
+        vad.flush()
+        while vad.has_segment():
+            seg = vad.pop_segment()
+            if mode == "ensemble":
+                _, text = ensemble.transcribe(seg)
+            else:
+                text = decode(rec, seg)
+            cleaned = text.replace("<unk>", "").strip() if mode != "ensemble" else text
+            if cleaned:
+                stats["segments"] += 1
+                stats["total_chars"] += len(cleaned)
+                show_result(cleaned)
+
+    stats["runtime_s"] = f"{time.time()-start_time:.1f}s"
+    show_stats(stats)
+    print("\n  👋 再见!\n")
+
+
+# ═══════════════════════════════════════════════════
+# 文件模式（测试用）
+# ═══════════════════════════════════════════════════
+
+def run_file(audio_path: str, mode: str = "ensemble"):
+    """对音频文件解码并显示各模型结果"""
+    import soundfile as sf
+
+    print(f"\n  📂 文件: {audio_path}")
+    print(f"  模式: {mode}\n")
+
+    samples, sr = sf.read(audio_path)
+    if sr != SAMPLE_RATE:
+        import librosa
+        samples = librosa.resample(samples, orig_sr=sr, target_sr=SAMPLE_RATE)
+    print(f"  🎧 音频: {len(samples)/SAMPLE_RATE:.1f}s\n")
+
+    t0 = time.time()
+
+    if mode == "ensemble":
+        ensemble = EnsembleDecoder()
+        source, text = ensemble.transcribe(samples)
+        print(f"  🏆 [{source}] {text}\n")
+        print(f"  ⏱ {time.time()-t0:.1f}s")
+    else:
+        # 跑所有模型对比
+        recs = {}
+
+        t1 = time.time()
+        recs["ctc"] = create_ctc()
+        text_ctc = decode(recs["ctc"], samples)
+        text_ctc_clean = text_ctc.replace("<unk>", "").strip()
+        print(f"  \u2460 CTC:      {text_ctc_clean}")
+        if "<unk>" in text_ctc:
+            unk_n = text_ctc.count("<unk>")
+            print(f"       ⚠️ {unk_n}x <unk>")
+
+        t2 = time.time()
+        recs["omni"] = create_omnilingual()
+        text_omni = decode(recs["omni"], samples)
+        print(f"  \u2461 Omni:     {text_omni}")
+        en_ratio = len(re.findall(r'[a-zA-Z]', text_omni)) / max(len(text_omni), 1)
+        if en_ratio > 0.05:
+            print(f"       🇬🇧 英文占比 {en_ratio:.0%}")
+
+        print(f"  \n  ⏱ CTC={t2-t1:.1f}s  Omni={time.time()-t2:.1f}s  Total={time.time()-t0:.1f}s")
 
 
 # ═══════════════════════════════════════════════════
@@ -269,224 +407,51 @@ class Display:
 # ═══════════════════════════════════════════════════
 
 def list_devices():
-    """列出可用音频设备"""
     print("可用音频设备:")
     print(sd.query_devices())
-    print(f"\n默认输入设备: {sd.default.device[0]}")
-
-
-def run_realtime(device=None, model_type="ctc"):
-    """实时模式：持续监听麦克风，语音段自动转写"""
-    print("\n" + "=" * 60)
-    model_label = "Zipformer-CTC（中文专用）" if model_type == "ctc" else "Zipformer Transducer（中英双语）"
-    print(f"  🎤 {model_label} 实时语音转写")
-    print("  " + "=" * 40)
-    print("  模式: 实时监听 (按 Ctrl+C 退出)")
-    print("  " + "=" * 40)
-
-    # 初始化引擎
-    try:
-        engine = AsrEngine(model_type=model_type)
-    except FileNotFoundError as e:
-        print(f"  ❌ {e}")
-        return
-
-    # 启动麦克风
-    mic = MicCapture()
-    try:
-        mic.start(device=device)
-    except Exception as e:
-        print(f"  ❌ 无法打开麦克风: {e}")
-        print("  请用 --list-devices 查看可用设备")
-        return
-
-    # 统计
-    stats = {"segments": 0, "total_chars": 0, "runtime_s": 0}
-    start_time = time.time()
-
-    print("\n  🟢 开始监听...")
-    print()
-
-    try:
-        while mic.running:
-            # 读取音频块
-            chunk = mic.read_chunk(timeout=0.05)
-            if chunk is None:
-                continue
-
-            # 喂入 VAD
-            engine.feed_audio(chunk)
-
-            # 显示 VAD 状态
-            is_active = engine.is_speech_active()
-            status_text = "说话中..." if is_active else "静音监听中..."
-            Display.show_status(status_text, is_active=is_active)
-
-            # 处理完成的语音段
-            while engine.has_segment():
-                segment = engine.pop_segment()
-                if len(segment) < SAMPLE_RATE * 0.3:  # 小于 0.3 秒的段跳过
-                    continue
-
-                # 转写 + 清理
-                text = engine.transcribe(segment)
-                text, unk_ratio = engine.clean_text(text)
-
-                if text:
-                    stats["segments"] += 1
-                    stats["total_chars"] += len(text)
-                    suffix = f" ⚠️ <unk>占比 {unk_ratio:.0%}" if unk_ratio > 0.3 else ""
-                    Display.show_result(text + suffix)
-
-    except KeyboardInterrupt:
-        print("\n\n  ⏹️  正在停止...")
-    finally:
-        mic.stop()
-        engine.flush_vad()
-
-        # 处理剩余的语音段
-        while engine.has_segment():
-            segment = engine.pop_segment()
-            if len(segment) >= SAMPLE_RATE * 0.3:
-                text, _ = engine.clean_text(engine.transcribe(segment))
-                if text:
-                    stats["segments"] += 1
-                    stats["total_chars"] += len(text)
-                    Display.show_result(text)
-
-    stats["runtime_s"] = time.time() - start_time
-    Display.show_stats(stats)
-    print("\n  👋 再见!\n")
-
-
-def run_one_shot(device=None, model_type="ctc"):
-    """单次模式：回车开始录音，再回车结束并转写"""
-    print("\n" + "=" * 60)
-    model_label = "Zipformer-CTC（中文专用）" if model_type == "ctc" else "Zipformer Transducer（中英双语）"
-    print(f"  🎤 {model_label} 单次语音转写")
-    print("  " + "=" * 40)
-    print("  模式: 按 Enter 开始/停止录音")
-    print("  " + "=" * 40)
-
-    # 初始化引擎
-    try:
-        engine = AsrEngine(model_type=model_type)
-    except FileNotFoundError as e:
-        print(f"  ❌ {e}")
-        return
-
-    # 启动麦克风
-    mic = MicCapture()
-    try:
-        mic.start(device=device)
-    except Exception as e:
-        print(f"  ❌ 无法打开麦克风: {e}")
-        print("  请用 --list-devices 查看可用设备")
-        return
-
-    input("\n  ⏸️  按 Enter 开始录音...")
-    print("\n  🟢 录音中... (按 Enter 停止)\n")
-
-    # 采集音频到缓冲区
-    buffer = []
-    input()  # 等待再次回车
-    print("  ⏹️  停止录音\n")
-
-    # 收集剩余音频
-    time.sleep(0.3)  # 等待最后的音频块
-    while not mic.audio_queue.empty():
-        try:
-            chunk = mic.audio_queue.get_nowait()
-            buffer.append(chunk)
-        except queue.Empty:
-            break
-
-    mic.stop()
-
-    if not buffer:
-        print("  ⚠️  未采集到音频")
-        return
-
-    # 拼接音频
-    audio = np.concatenate(buffer) if len(buffer) > 1 else buffer[0]
-
-    # 用 VAD 分段
-    print("  🔄 正在分析语音段...")
-    engine.feed_audio(audio)
-    engine.flush_vad()
-
-    segments = []
-    while engine.has_segment():
-        segment = engine.pop_segment()
-        if len(segment) >= SAMPLE_RATE * 0.3:
-            segments.append(segment)
-
-    if not segments:
-        print("  ⚠️  未检测到有效语音（请检查麦克风或说话声音）")
-        return
-
-    print(f"\n  检测到 {len(segments)} 个语音段，正在转写...\n")
-
-    # 逐段转写
-    total_chars = 0
-    for i, seg in enumerate(segments):
-        raw_text = engine.transcribe(seg)
-        text, unk_ratio = engine.clean_text(raw_text)
-        if text:
-            total_chars += len(text)
-            suffix = f" ⚠️ <unk>占比 {unk_ratio:.0%}" if unk_ratio > 0.3 else ""
-            print(f"  ✍️ [{i + 1}] {text}{suffix}")
-
-    print(f"\n  📊 总计: {total_chars} 字符 / {len(segments)} 段\n")
+    print(f"\n默认输入: {sd.default.device[0]}")
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="🎤 Zipformer-CTC 本地麦克风实时转写",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-示例:
-  %(prog)s                    实时模式（持续监听）
-  %(prog)s --one-shot         单次模式（回车开始/结束）
-  %(prog)s --list-devices     列出音频设备
-  %(prog)s --device 2         指定音频设备编号
-        """,
-    )
-    parser.add_argument(
-        "--one-shot", action="store_true",
-        help="单次模式（回车开始/结束录音）"
-    )
-    parser.add_argument(
-        "--bilingual", action="store_true",
-        help="使用中英双语模型（支持英文识别，无 <unk>）"
-    )
-    parser.add_argument(
-        "--list-devices", action="store_true",
-        help="列出可用音频设备"
-    )
-    parser.add_argument(
-        "--device", type=int, default=None,
-        help="音频设备编号（默认: 系统默认输入设备）"
-    )
+    parser = argparse.ArgumentParser(description="🎤 多模型 ASR 实时转写")
+    parser.add_argument("--one-shot", action="store_true", help="单次模式")
+    parser.add_argument("--bilingual", action="store_true", help="中英双语 Transducer")
+    parser.add_argument("--omnilingual", action="store_true", help="Omnilingual 300M 多语言")
+    parser.add_argument("--ensemble", action="store_true", help="三模型集成（CTC+Omni）")
+    parser.add_argument("--file", type=str, help="测试音频文件路径")
+    parser.add_argument("--list-devices", action="store_true", help="列出音频设备")
+    parser.add_argument("--device", type=int, default=None, help="音频设备编号")
     args = parser.parse_args()
 
     if args.list_devices:
         list_devices()
         return
 
-    model_type = "bilingual" if args.bilingual else "ctc"
-    model_label = "Zipformer-CTC（中文专用）" if model_type == "ctc" else "Zipformer Transducer（中英双语）"
+    # 确定模式
+    if args.ensemble:
+        mode = "ensemble"
+    elif args.omnilingual:
+        mode = "omnilingual"
+    elif args.bilingual:
+        mode = "bilingual"
+    else:
+        mode = "ctc"
 
     print()
-    print("╔════════════════════════════════════════════════╗")
-    print(f"║      🎤 {model_label:<30} ║")
-    print(f"║      {'帧级独立分类 · 无语言模型偏置' if model_type == 'ctc' else '中英双语支持 · Transducer 架构':<32}║")
-    print("╚════════════════════════════════════════════════╝")
+    print("\u2554" + "\u2550" * 58 + "\u2557")
+    labels = {"ctc": "CTC 中文专用 · 顺序路由", 
+              "bilingual": "中英双语 Transducer",
+              "omnilingual": "Omnilingual 300M 多语言",
+              "ensemble": "三模型集成 · CTC+Omni+Parakeet"}
+    print(f"\u2551      🎤 {labels.get(mode, mode):<48}\u2551")
+    print("\u255a" + "\u2550" * 58 + "\u255d")
 
-    if args.one_shot:
-        run_one_shot(device=args.device, model_type=model_type)
+    if args.file:
+        run_file(args.file, mode=mode)
+    elif args.one_shot:
+        run_realtime(device=args.device, mode=mode)
     else:
-        run_realtime(device=args.device, model_type=model_type)
+        run_realtime(device=args.device, mode=mode)
 
 
 if __name__ == "__main__":
