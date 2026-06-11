@@ -245,3 +245,45 @@ wget https://hf-mirror.com/pantinor/sherpa-onnx-zipformer-ctc-zh-int8-2025-07-03
 - LLM 无法补回没被听到的语音内容，尤其是专有名词
 - 置信度检测器（字符数/时长比）有效：精准触发了 9/9 个有问题的混响样本，零误报
 - 结论：资源应投入声学前端增强而非后处理 LLM
+
+### 2026-06-11 全模型 CTC 横评
+
+**做什么**：
+对 sherpa-onnx 生态中 **全部 7 个 CTC 模型** 做了统一基准测试（528 样本）：
+
+| 模型 | CER | 大小 | 排名 |
+|:---|---:|:---:|:---:|
+| A: Zipformer-CTC offline zh (int8, 350MB) | **0.1090** | 350MB | 🥇 |
+| H: WeNet-Wenetspeech CTC (int8, 127MB) | 0.1273 | 127MB | 🥈 |
+| B: Zipformer-CTC streaming large (int8, 155MB) | 0.1348 | 155MB | 🥉 |
+| C: Zipformer-CTC streaming xlarge (int8, 728MB) | 0.1395 | 728MB | 4 |
+| E: Zipformer-CTC multi-zh-hans (fp32, 251MB) | 0.2179 | 251MB | 5 |
+| D: Zipformer-CTC streaming small (int8, 25MB) | 0.2226 | 25MB | 6 |
+| F: NeMo Parakeet 110M (en) | N/A | 126MB | 仅英文 |
+
+**结果**：
+1. **离线 Zipformer-CTC 冠军** — 帧级独立分类，无语言模型偏置
+2. **xlarge(728MB) 反而不如 large(155MB)** — 过参数化对 CTC 无益
+3. **流式模型有 ~20-30% 精度损失** vs 离线版本
+4. **无中英双语 CTC 模型** — `<unk>` 问题仍需 Transducer 兜底
+5. **WeNet 表现亮眼** — 127MB 达到 0.1273，仅次于冠军
+
+**踩坑**：
+- 流式 CTC 必须 `tail_paddings(0.66s) + input_finished()`，否则帧数不够报错
+- C_xlarge 解码极慢（~1.5s/样本），大模型 + 流式 = 双重开销
+- RAM 7.4GB 限制只能同时跑 1-2 个大模型
+
+**学到什么**：
+- 模型大小 ≠ 精度：C_xlarge(728MB) < B_large(155MB)
+- `OfflineRecognizer` vs `OnlineRecognizer` API 差异大
+- 结论：保持现有离线 Zipformer-CTC + `--bilingual` Transducer 双模式
+
+### 2026-06-11 Omnilingual 300M CTC 测试
+
+测试了 `csukuangfj/sherpa-onnx-omnilingual-asr-1600-languages-300M-ctc-int8`：
+- 9812 token 词表（5750中文 + 英文字母）
+- **0/528 `<unk>`** — 唯一无 `<unk>` 的 CTC 模型
+- CER=0.2988（中文精度不如 Zipformer-CTC，但英文可识别）
+- 中英混场景 CER=0.6029（英文部分做音近猜测，不准确但比 `<unk>` 好）
+
+结论：新增 `--omnilingual` 模式可选，适合中文为主偶有英文的场景。

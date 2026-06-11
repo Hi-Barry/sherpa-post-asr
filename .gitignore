@@ -30,3 +30,9 @@ BENCHMARK_CTC_REPORT.md
 Thumbs.db
 *.swp
 *.swo
+
+# ── CTC 全模型横评结果（可重跑）──
+audio_test/ctc_all/
+
+# ── Omnilingual 300M CTC 多语言模型 ──
+models/omnilingual-ctc/
