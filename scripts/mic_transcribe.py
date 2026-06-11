@@ -36,6 +36,7 @@ PROJECT_DIR = SCRIPT_DIR.parent
 
 # 模型路径
 MODEL_DIR = PROJECT_DIR / "models" / "zipformer-ctc-zh-int8" / "sherpa-onnx-zipformer-ctc-zh-int8-2025-07-03"
+BILINGUAL_DIR = PROJECT_DIR / "models" / "zipformer-bilingual" / "sherpa-onnx-zipformer-zh-en-2023-11-22"
 VAD_MODEL = PROJECT_DIR / "models" / "vad" / "silero_vad.onnx"
 
 # 音频参数
@@ -59,9 +60,14 @@ DECODING_METHOD = "greedy_search"  # ← 关键：纯帧级分类，无 LM
 # ═══════════════════════════════════════════════════
 
 class AsrEngine:
-    """Zipformer-CTC ASR + Silero VAD 引擎"""
+    """ASR + Silero VAD 引擎。支持两种模型：
+    - ctc: Zipformer-CTC（中文专用，帧级独立分类，CER=0.0104）
+    - bilingual: Zipformer Transducer（中英双语，无 <unk>）
+    """
 
-    def __init__(self):
+    def __init__(self, model_type: str = "ctc"):
+        self.model_type = model_type
+
         # 加载 VAD
         if not VAD_MODEL.exists():
             raise FileNotFoundError(
@@ -81,7 +87,14 @@ class AsrEngine:
         )
         self.vad = sherpa_onnx.VoiceActivityDetector(self.vad_config, buffer_size_in_seconds=120)
 
-        # 加载 Zipformer-CTC
+        # 加载 ASR 模型
+        if model_type == "bilingual":
+            self._load_bilingual()
+        else:
+            self._load_ctc()
+
+    def _load_ctc(self):
+        """加载 Zipformer-CTC（中文专用）"""
         if not MODEL_DIR.exists():
             raise FileNotFoundError(
                 f"CTC 模型目录未找到: {MODEL_DIR}\n"
@@ -100,7 +113,30 @@ class AsrEngine:
             sample_rate=SAMPLE_RATE,
             decoding_method=DECODING_METHOD,  # ← 纯帧级分类
         )
-        print(f"  ✅ 模型加载完成 ({time.time() - t0:.1f}s)")
+        print(f"  ✅ CTC 模型加载完成 ({time.time() - t0:.1f}s)")
+
+    def _load_bilingual(self):
+        """加载中英双语 Transducer 模型"""
+        if not BILINGUAL_DIR.exists():
+            raise FileNotFoundError(
+                f"双语模型目录未找到: {BILINGUAL_DIR}\n"
+                f"请下载: cd {BILINGUAL_DIR.parent} && "
+                f"wget https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/"
+                f"sherpa-onnx-zipformer-zh-en-2023-11-22.tar.bz2 && "
+                f"tar xf sherpa-onnx-zipformer-zh-en-2023-11-22.tar.bz2"
+            )
+
+        print(f"  📦 加载双语模型: {BILINGUAL_DIR.name}")
+        t0 = time.time()
+        self.recognizer = sherpa_onnx.OfflineRecognizer.from_transducer(
+            encoder=str(BILINGUAL_DIR / "encoder-epoch-34-avg-19.int8.onnx"),
+            decoder=str(BILINGUAL_DIR / "decoder-epoch-34-avg-19.onnx"),
+            joiner=str(BILINGUAL_DIR / "joiner-epoch-34-avg-19.int8.onnx"),
+            tokens=str(BILINGUAL_DIR / "tokens.txt"),
+            num_threads=ASR_NUM_THREADS,
+            decoding_method=DECODING_METHOD,
+        )
+        print(f"  ✅ 双语模型加载完成 ({time.time() - t0:.1f}s)")
 
     def feed_audio(self, samples: np.ndarray):
         """喂入音频到 VAD"""
@@ -239,17 +275,18 @@ def list_devices():
     print(f"\n默认输入设备: {sd.default.device[0]}")
 
 
-def run_realtime(device=None):
+def run_realtime(device=None, model_type="ctc"):
     """实时模式：持续监听麦克风，语音段自动转写"""
     print("\n" + "=" * 60)
-    print("  🎤 Zipformer-CTC 实时语音转写")
+    model_label = "Zipformer-CTC（中文专用）" if model_type == "ctc" else "Zipformer Transducer（中英双语）"
+    print(f"  🎤 {model_label} 实时语音转写")
     print("  " + "=" * 40)
     print("  模式: 实时监听 (按 Ctrl+C 退出)")
     print("  " + "=" * 40)
 
     # 初始化引擎
     try:
-        engine = AsrEngine()
+        engine = AsrEngine(model_type=model_type)
     except FileNotFoundError as e:
         print(f"  ❌ {e}")
         return
@@ -322,17 +359,18 @@ def run_realtime(device=None):
     print("\n  👋 再见!\n")
 
 
-def run_one_shot(device=None):
+def run_one_shot(device=None, model_type="ctc"):
     """单次模式：回车开始录音，再回车结束并转写"""
     print("\n" + "=" * 60)
-    print("  🎤 Zipformer-CTC 单次语音转写")
+    model_label = "Zipformer-CTC（中文专用）" if model_type == "ctc" else "Zipformer Transducer（中英双语）"
+    print(f"  🎤 {model_label} 单次语音转写")
     print("  " + "=" * 40)
     print("  模式: 按 Enter 开始/停止录音")
     print("  " + "=" * 40)
 
     # 初始化引擎
     try:
-        engine = AsrEngine()
+        engine = AsrEngine(model_type=model_type)
     except FileNotFoundError as e:
         print(f"  ❌ {e}")
         return
@@ -419,6 +457,10 @@ def main():
         help="单次模式（回车开始/结束录音）"
     )
     parser.add_argument(
+        "--bilingual", action="store_true",
+        help="使用中英双语模型（支持英文识别，无 <unk>）"
+    )
+    parser.add_argument(
         "--list-devices", action="store_true",
         help="列出可用音频设备"
     )
@@ -432,16 +474,19 @@ def main():
         list_devices()
         return
 
+    model_type = "bilingual" if args.bilingual else "ctc"
+    model_label = "Zipformer-CTC（中文专用）" if model_type == "ctc" else "Zipformer Transducer（中英双语）"
+
     print()
     print("╔════════════════════════════════════════════════╗")
-    print("║      🎤 Zipformer-CTC 本地语音转写工具         ║")
-    print("║      帧级独立分类 · 无语言模型偏置              ║")
+    print(f"║      🎤 {model_label:<30} ║")
+    print(f"║      {'帧级独立分类 · 无语言模型偏置' if model_type == 'ctc' else '中英双语支持 · Transducer 架构':<32}║")
     print("╚════════════════════════════════════════════════╝")
 
     if args.one_shot:
-        run_one_shot(device=args.device)
+        run_one_shot(device=args.device, model_type=model_type)
     else:
-        run_realtime(device=args.device)
+        run_realtime(device=args.device, model_type=model_type)
 
 
 if __name__ == "__main__":
