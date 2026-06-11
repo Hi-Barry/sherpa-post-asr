@@ -54,6 +54,36 @@ ASR_NUM_THREADS = 4
 DECODING_METHOD = "greedy_search"
 
 
+# ── 标点恢复 ──
+PUNC_DIR = PROJECT_DIR / "models" / "punctuation"
+_punct_engine = None
+
+def get_punct_engine():
+    global _punct_engine
+    if _punct_engine is None:
+        if PUNC_DIR.exists() and (PUNC_DIR / "model.int8.onnx").exists():
+            config = sherpa_onnx.OfflinePunctuationConfig(
+                model=sherpa_onnx.OfflinePunctuationModelConfig(
+                    ct_transformer=str(PUNC_DIR / "model.int8.onnx"),
+                    num_threads=1,
+                    provider="cpu",
+                )
+            )
+            _punct_engine = sherpa_onnx.OfflinePunctuation(config)
+    return _punct_engine
+
+def add_punctuation(text: str) -> str:
+    if not text:
+        return text
+    punct = get_punct_engine()
+    if punct:
+        try:
+            return punct.add_punctuation(text)
+        except Exception:
+            return text
+    return text
+
+
 # ═══════════════════════════════════════════════════
 # VAD 引擎（共用）
 # ═══════════════════════════════════════════════════
@@ -321,7 +351,7 @@ def run_realtime(device=None, mode="ctc"):
                     if text:
                         stats["segments"] += 1
                         stats["total_chars"] += len(text)
-                        show_result(text, source=source)
+                        show_result(add_punctuation(text), source=source)
                 else:
                     text = decode(rec, seg)
                     cleaned = text.replace("<unk>", "").strip()
@@ -376,7 +406,7 @@ def run_file(audio_path: str, mode: str = "ensemble"):
     if mode == "ensemble":
         ensemble = EnsembleDecoder()
         source, text = ensemble.transcribe(samples)
-        print(f"  🏆 [{source}] {text}\n")
+        print(f"  🏆 [{source}] {add_punctuation(text)}\n")
         print(f"  ⏱ {time.time()-t0:.1f}s")
     else:
         # 跑所有模型对比
